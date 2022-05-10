@@ -35,7 +35,12 @@
 
     </main>
 
+    <% if (pokemonPut != null) {%>
+      <%- include('./components/modalPut') %>
+    <% } %> 
+    
     <%- include('./components/footer') %> 
 
   </body>
 </html>
+
