@@ -293,9 +293,52 @@ text-decoration: none;
     color: #40af00;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    border-radius: 3px;
 }
 
 .form-modal button:hover {
+    background-color: #40af00;
+    color: #fff;
+}
+
+.modal-body {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div#btns-del {
+    display: flex;
+    margin: 0 auto;
+}
+
+div#btns-del a{
+    padding: .7rem;
+    text-decoration: none;
+    width: 100%;
+    margin: 2rem 1rem 1rem;
+    border-radius: 3px;
+}
+
+div#btns-del a#no {
+    color: red;
+    border: solid 1px #dc0a2d;
+    transition: all .3s ease-in-out;
+}
+
+div#btns-del a#no:hover {
+    background-color: #dc0a2d;
+    color: #fff;
+}
+
+
+div#btns-del a#yes {
+    color: #40af00;
+    border: solid 1px #40af00;
+    transition: all .3s ease-in-out;
+}
+
+div#btns-del a#yes:hover {
     background-color: #40af00;
     color: #fff;
 }

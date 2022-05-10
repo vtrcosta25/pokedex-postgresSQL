@@ -68,10 +68,23 @@ const update = async (req, res) => {
   }
 };
 
+const remove = async (req, res) => {
+  try {
+    await Pokemon.destroy ({where: {id: req.params.id} });
+    res.redirect("/")
+  } catch (error) {
+    res.status(500).send({ error: error.message});
+  }
+};
+
+
+
 module.exports = {
   getAll,
   signup,
   create,
   getById,
   update,
+  remove,
+
 };
