@@ -58,13 +58,20 @@ const getById = async (req, res) => {
   }
 };
 
-const update = (req, res) => {
-
-}
+const update = async (req, res) => {
+  try {
+    const pokemon = req.body;
+    await Pokemon.update (pokemon, {where: {id: req.params.id}})
+    res.redirect("/")
+  } catch (error) {
+    res.status(500).send({ error: error.message});
+  }
+};
 
 module.exports = {
   getAll,
   signup,
   create,
   getById,
+  update,
 };

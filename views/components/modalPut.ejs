@@ -6,37 +6,37 @@
     </div>
 
     <div class="modal-body">
-      <form class="form-modal" action="/update/<% pokemonPut.id %>" method="post">
+      <form class="form-modal" action="/update/<%= pokemonPut.id %>" method="post">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" value="<% pokemonPut.nome %>" />
+        <input type="text" id="nome" name="nome" value="<%= pokemonPut.nome %>" />
 
         <label for="descricao">Descrição:</label>
-        <input type="text" id="descricao" name="descricao" value="<% pokemonPut.descricao
+        <input type="text" id="descricao" name="descricao" value="<%= pokemonPut.descricao
         %>">
 
         <label for="tipo">Tipo:</label>
-        <input type="text" id="tipo" name="tipo" value="<% pokemonPut.tipo %>">
+        <input type="text" id="tipo" name="tipo" value="<%= pokemonPut.tipo %>">
         
 
         <label for="imagem">Link da Imagem</label>
-        <input type="text" id="imagem" name="imagem" value="<% pokemonPut.imagem %>">
+        <input type="text" id="imagem" name="imagem" value="<%= pokemonPut.imagem %>">
         
-
+<!-- 
         <label for="peso">Peso:</label>
-        <input type="text" id="peso" name="peso" value="<% pokemonPut.peso %>">
+        <input type="text" id="peso" name="peso" value="<%= pokemonPut.peso %>">
         
 
         <label for="altura">Altura:</label>
-        <input type="text" id="altura" name="altura" value="<% pokemonPut.altura %>">
+        <input type="text" id="altura" name="altura" value="<%= pokemonPut.altura %>">
         
 
         <label for="categoria">Categoria:</label>
-        <input type="text" id="categoria" name="categoria" value="<% pokemonPut.categoria
+        <input type="text" id="categoria" name="categoria" value="<%= pokemonPut.categoria
         %>">
 
         <label for="habilidade">Habilidade:</label>
-        <input type="text" id="habilidade" name="habilidade" value="<%
-        pokemonPut.habilidade %>">
+        <input type="text" id="habilidade" name="habilidade" value="<%=
+        pokemonPut.habilidade %>"> -->
 
         <button id="buttoncadastrar" type="submit" onclick="alerta()">
           Atualizar
