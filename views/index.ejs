@@ -40,6 +40,7 @@
           <p class="descricao"><%= pokemon.descricao %></p>
           <p class="tipo">Tipo: <%= pokemon.tipo %></p>
           <a id="editar" href="/atualizar/<%= pokemon.id %>">Editar</a>
+          <a id="apagar" href="/delete/<%= pokemon.id %>">Apagar</a>
           
         </div>
         <% }) %>
