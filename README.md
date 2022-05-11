@@ -2,4 +2,4 @@
 
 ## pokedex-postgresSQL
 
-Projeto atualizado com database sincronizando Sequelize.
+Projeto atualizado com database sincronizando Sequelize, alocando componentes e estruturando dados de maneira mais limpa.
