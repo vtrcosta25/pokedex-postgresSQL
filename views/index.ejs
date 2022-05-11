@@ -11,6 +11,9 @@
 
     <header>
       <img src="/img/banner.jpg" alt="banner">
+      <% if(message != "") {%>
+      <%- include('./components/alerts') %>
+      <% } %>
     </header>
 
     <main>
@@ -21,7 +24,7 @@
 
         <% pokedex.forEach((pokemon)=> { %>
         <div class="card">
-          <a class="redirect" href="detalhes/<%= pokemon.id %>"><img src="<%= pokemon.imagem %>" alt="" />
+          <a class="redirect"<%= pokemon.id %>"><img src="<%= pokemon.imagem %>" alt="" />
           <h3><%= pokemon.nome %></h3></a>
           <p class="descricao"><%= pokemon.descricao %></p>
           <p class="tipo">Tipo: <%= pokemon.tipo %></p>
@@ -45,6 +48,8 @@
     
     
     <%- include('./components/footer') %> 
+
+    <script src="/js/script.js"></script>
 
   </body>
 </html>

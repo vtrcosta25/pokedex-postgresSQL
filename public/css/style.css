@@ -342,3 +342,43 @@ div#btns-del a#yes:hover {
     background-color: #40af00;
     color: #fff;
 }
+
+.message{
+    position: absolute;
+    top: 7rem;
+    right: 2rem;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    padding: 1.2rem;
+    font-weight: 600;
+    border-radius: 3px;
+    align-items: center;
+    color: #fff;
+}
+
+.message-danger{
+    background-color: #ffbac6;
+    color: #b4001e;
+}
+
+.message-success{
+    background-color: #c0ffba;
+    color: #007a0a;
+}
+
+.message-info{
+    background-color: #babfff;
+    color: #0003b4;
+}
+
+.message-warning{
+    background-color: #fffaba;
+    color: #b48400;
+}
+
+/* .message i{
+    cursor: pointer;
+    font-size: 2rem;
+} */

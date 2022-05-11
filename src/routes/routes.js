@@ -10,6 +10,4 @@ routes.get("/remove/:id", PokemonController.remove);
 
 
 
-
-
 module.exports = routes;

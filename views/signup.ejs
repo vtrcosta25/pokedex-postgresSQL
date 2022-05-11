@@ -16,6 +16,10 @@
 
         <div>
          
+          <% if(message != "") {%>
+            <%- include('./components/alerts') %>
+          <% } %>
+
             <h2>Cadastre um novo Pokemon</h2>
     
             <form action="/create" method="post">
@@ -53,6 +57,8 @@
       
     <%- include('./components/footer') %> 
 
+    <script src="/js/script.js"></script>
+    
   </body>
 </html>
 
